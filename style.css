@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    font-family: 'Josefin Sans';
+    color:white;
+}
+
 body {
     width: 100vw;
     height: 100vh;
@@ -5,6 +12,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 1vmin;
+    padding: 0;
+    margin: 0;
 }
 
 .cellContainer {
@@ -28,4 +39,29 @@ body {
 
 .active {
     background-color: rgb(212, 33, 33);
+}
+
+.score {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    font-size: 32px;
+}
+
+.start {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20vmin;
+    height: 8vmin;
+    background-color: red;
+    border: none;
+    border-radius: 1vmin;
+    font-size: 32px;
+}
+
+.hidden {
+    opacity: 0;
+    pointer-events: none;
 }
